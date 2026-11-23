@@ -1,0 +1,91 @@
+# Monochrome plain-text theme, light, high contrast: no syntax highlighting
+
+"ui.background" = { bg = "g0" }
+"ui.text" = { fg = "g9" }
+"ui.text.focus" = { fg = "g9", bg = "g3", modifiers = ["bold"] }
+"ui.text.info" = { fg = "g9", bg = "g1" }
+
+# Cursor and selection
+"ui.cursor" = { fg = "g0", bg = "g6" }
+"ui.cursor.primary" = { fg = "g0", bg = "g9" }
+"ui.cursor.insert" = { fg = "g0", bg = "g7", modifiers = ["slow_blink"] }
+"ui.cursor.select" = { fg = "g0", bg = "g6" }
+"ui.cursor.match" = { fg = "g9", bg = "g4", modifiers = ["bold", "underlined"] }
+"ui.selection" = { bg = "g3" }
+"ui.selection.primary" = { bg = "g4" }
+"ui.highlight" = { bg = "g3" }
+"ui.cursorline.primary" = { bg = "g1" }
+"ui.cursorline.secondary" = { bg = "g1" }
+"ui.cursorcolumn.primary" = { bg = "g1" }
+
+# Gutter
+"ui.linenr" = { fg = "g6" }
+"ui.linenr.selected" = { fg = "g9", modifiers = ["bold"] }
+"ui.gutter" = { bg = "g0" }
+"ui.gutter.selected" = { bg = "g2" }
+
+# Virtual elements
+"ui.virtual.ruler" = { bg = "g2" }
+"ui.virtual.whitespace" = { fg = "g4" }
+"ui.virtual.indent-guide" = { fg = "g3" }
+"ui.virtual.inlay-hint" = { fg = "g6", modifiers = ["italic"] }
+"ui.virtual.jump-label" = { fg = "g0", bg = "g9", modifiers = ["bold"] }
+"ui.virtual.wrap" = { fg = "g5" }
+
+# Statusline: modes differ by inversion and weight
+"ui.statusline" = { fg = "g9", bg = "g3" }
+"ui.statusline.inactive" = { fg = "g6", bg = "g2" }
+"ui.statusline.normal" = { fg = "g0", bg = "g9", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "g9", bg = "g0", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "g0", bg = "g6", modifiers = ["bold", "italic"] }
+"ui.statusline.separator" = { fg = "g5" }
+
+# Bufferline
+"ui.bufferline" = { fg = "g7", bg = "g2" }
+"ui.bufferline.active" = { fg = "g0", bg = "g9", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "g2" }
+
+# Popups, menus, prompts
+"ui.popup" = { fg = "g9", bg = "g1" }
+"ui.popup.info" = { fg = "g9", bg = "g1" }
+"ui.window" = { fg = "g6" }
+"ui.help" = { fg = "g9", bg = "g1" }
+"ui.menu" = { fg = "g9", bg = "g1" }
+"ui.menu.selected" = { fg = "g0", bg = "g9", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "g6", bg = "g2" }
+
+# Diagnostics: distinguished by underline style and weight, not color
+"error" = { fg = "g9", modifiers = ["bold"] }
+"warning" = { fg = "g9" }
+"info" = { fg = "g8" }
+"hint" = { fg = "g7", modifiers = ["italic"] }
+
+"diagnostic.error" = { underline = { color = "g9", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "g9", style = "dashed" } }
+"diagnostic.info" = { underline = { color = "g8", style = "dotted" } }
+"diagnostic.hint" = { underline = { color = "g7", style = "dotted" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# Git diff markers in the gutter
+"diff.plus" = { fg = "g9", modifiers = ["bold"] }
+"diff.delta" = { fg = "g7" }
+"diff.minus" = { fg = "g6" }
+
+# Markup
+"markup.heading" = { modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+
+[palette]
+g0 = "#ffffff"
+g1 = "#f0f0f0"
+g2 = "#e0e0e0"
+g3 = "#c8c8c8"
+g4 = "#a0a0a0"
+g5 = "#707070"
+g6 = "#545454"
+g7 = "#383838"
+g8 = "#1c1c1c"
+g9 = "#000000"
